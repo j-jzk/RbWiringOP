@@ -21,6 +21,9 @@ git clone https://github.com/JsemJednorozec/RbWiringOP.git
 ```ruby
 require './RbWiringOP/wiring.rb'
 
+# reset the gpio (not required)
+WiringOP.reset
+
 my_pin = WiringOP::Pin.new :pin => 0, :direction => :out  # library uses the WiringPi pin numbering
 
 # do something with the pin

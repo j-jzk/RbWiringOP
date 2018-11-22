@@ -56,4 +56,8 @@ module WiringOP
 
         private :set, :get_value
     end
+
+    def reset
+        `gpio reset`
+    end
 end
