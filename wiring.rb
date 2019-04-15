@@ -39,7 +39,7 @@ module WiringOP
         end
 
         def set value
-            if @direction != :out do
+            if @direction != :out then
                 raise WiringOP::DirectionError, "you tried to set value of a IN pin"
             end
 
@@ -47,7 +47,7 @@ module WiringOP
         end
 
         def get_value
-            if @direction != :in do
+            if @direction != :in then
                 raise WiringOP::DirectionError, "you tried to get a value of a OUT pin"
             end
 
@@ -57,7 +57,7 @@ module WiringOP
         private :set, :get_value
     end
 
-    def reset
+    def WiringOP.reset
         `gpio reset`
     end
 end
