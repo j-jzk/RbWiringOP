@@ -14,7 +14,7 @@ sudo ./build
 
 Then clone this repository:
 ```
-git clone https://github.com/JsemJednorozec/RbWiringOP.git
+git clone https://github.com/j-jzk/RbWiringOP.git
 ```
 
 ## Usage
@@ -24,13 +24,13 @@ require './RbWiringOP/wiring.rb'
 # reset the gpio (not required)
 WiringOP.reset
 
-my_pin = WiringOP::Pin.new :pin => 0, :direction => :out  # library uses the WiringPi pin numbering
+my_pin = WiringOP::Pin.new :pin => 0, :direction => :out  # the library uses WiringPi pin numbering
 
 # do something with the pin
 my_pin.set_hi
 my_pin.set_lo
 
-# input pin
+# an input pin
 another_pin = WiringOP::Pin.new :pin => 4, :direction => :in
 
 # check the value
